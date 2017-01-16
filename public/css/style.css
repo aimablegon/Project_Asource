@@ -1,0 +1,171 @@
+/* Reset */
+/* Common */
+/* Layout */
+/* Main */
+/* My page */
+/* Buy */
+/* Popup */
+
+
+
+
+
+
+/* ======  Reset  ====================================================*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+html {
+  overflow-y: scroll;
+  font-size: 14px;
+}
+body {
+  position: relative;
+  font-family: 'Noto Sans KR', 'Droid Serif', sans-serif;
+  font-size:12px;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+fieldset,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+dl,
+ul,
+ol,
+li {
+  list-style: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+input,
+button {
+  vertical-align: middle;
+}
+button {
+  border: 0;
+  background: none;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+/* End reset */
+
+
+
+
+/* ====== Common ============================================== */
+div{outline: 1px solid #000}
+.contaniner-fluid{
+  outline:1px solid #000
+}
+.contaniner{
+  outline:1px solid #F00
+}
+
+.btn{
+
+}
+.btn_a{
+  height: 40px;
+}
+.btn_b{
+  width: 105px;
+  height: 30px;
+}
+.btn_c{
+  width: 60px;
+  height: 30px;
+}
+.btn_close{
+  width: 20px;
+  height:20px;
+}
+.circle_a{
+  width: 25px;
+  height:25px;
+}
+.circle_b{
+  width: 20px;
+  height:20px;
+}
+
+/* End common */
+
+
+
+/* ====== Layout ============================================== */
+#header{
+  width: 100%;
+  height: 100px;
+}
+.wrap_haed{
+  margin:25 30;
+  width: 100%
+}
+#footer{
+  background-color:#333333;
+  color:#FFF;
+}
+
+/* End Layout */
+
+
+
+
+/* ====== Main ============================================== */
+
+
+/* End Main */
+
+
+
+/* ====== My page ============================================*/
+
+
+/* End My page */
+
+
+
+/* ====== Buy ============================================== */
+
+
+/* End Buy */
+
+
+
+/* ====== Popup ============================================*/
+
+
+/* End Popup */
