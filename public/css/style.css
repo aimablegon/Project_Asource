@@ -1,16 +1,5 @@
-/* Reset */
-/* Common */
-/* Layout */
-/* Main */
-/* My page */
-/* Buy */
-/* Popup */
-
-
-
-
-
-
+@charset "utf-8";
+@import url('../css/font.css');
 /* ======  Reset  ====================================================*/
 html,
 body {
@@ -19,13 +8,11 @@ body {
   position: relative;
 }
 html {
-  overflow-y: scroll;
   font-size: 14px;
 }
 body {
   position: relative;
   font-family: 'Noto Sans KR', 'Droid Serif', sans-serif;
-  font-size:12px;
 }
 body,
 div,
@@ -72,100 +59,107 @@ input,
 button {
   vertical-align: middle;
 }
+::-moz-selection {
+  background: #000;
+  color: #FFF;
+}
+::selection {
+  background: #000;
+  color: #FFF;
+}
 button {
   border: 0;
   background: none;
 }
-img{
+img {
   width: 100%;
-  height: 100%;
+  heigth: 100%;
 }
 /* End reset */
-
-
-
-
-/* ====== Common ============================================== */
-div{outline: 1px solid #000}
-.contaniner-fluid{
-  outline:1px solid #000
-}
-.contaniner{
-  outline:1px solid #F00
-}
-
-.btn{
-
-}
-.btn_a{
+/* ====== Icon & Button ======================================== */
+.btn_a {
   height: 40px;
 }
-.btn_b{
+.btn_b {
   width: 105px;
   height: 30px;
 }
-.btn_c{
+.btn_c {
   width: 60px;
   height: 30px;
 }
-.btn_close{
+.btn_close {
   width: 20px;
-  height:20px;
+  height: 20px;
 }
-.circle_a{
+.circle_a {
   width: 25px;
-  height:25px;
+  height: 25px;
 }
-.circle_b{
+.circle_b {
   width: 20px;
-  height:20px;
+  height: 20px;
 }
-
+i {
+  font-size: 25px;
+}
+/* End Icon & Button */
+/* ====== Common ============================================== */
+.gnb_list {
+  outline: 1px solid #F00;
+}
 /* End common */
-
-
-
 /* ====== Layout ============================================== */
-#header{
+#header {
   width: 100%;
   height: 100px;
 }
-.wrap_haed{
-  margin:25 30;
-  width: 100%
+.wrap_haed {
+  width: 100%;
 }
-#footer{
-  background-color:#333333;
-  color:#FFF;
+.logo {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: initial;
+  margin: 30px;
 }
-
+.gnb {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: initial;
+  float: right;
+  margin: 43px 15px 30px;
+}
+#footer {
+  background-color: #333333;
+  color: #FFF;
+}
 /* End Layout */
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
 
-
-
-
-/* ====== Main ============================================== */
-
-
-/* End Main */
-
-
-
-/* ====== My page ============================================*/
-
-
-/* End My page */
-
-
-
-/* ====== Buy ============================================== */
-
-
-/* End Buy */
-
-
-
-/* ====== Popup ============================================*/
-
-
-/* End Popup */
+/*# sourceMappingURL=style.css.map */
