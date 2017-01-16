@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url('../css/font.css');
+/* ======  Reset  ====================================================*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+html {
+  overflow-y: scroll;
+  font-size: 14px;
+}
+body {
+  position: relative;
+  font-family: 'Noto Sans KR', 'Droid Serif', sans-serif;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+fieldset,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+dl,
+ul,
+ol,
+li {
+  list-style: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+input,
+button {
+  vertical-align: middle;
+}
+::-moz-selection {
+  background: #000;
+  color: #FFF;
+}
+::selection {
+  background: #000;
+  color: #FFF;
+}
+button {
+  border: 0;
+  background: none;
+}
+img {
+  width: 100%;
+  heigth: 100%;
+}
+/* End reset */
+/* ====== Icon & Button ======================================== */
+.btn_a {
+  height: 40px;
+}
+.btn_b {
+  width: 105px;
+  height: 30px;
+}
+.btn_c {
+  width: 60px;
+  height: 30px;
+}
+.btn_close {
+  width: 20px;
+  height: 20px;
+}
+.circle_a {
+  width: 25px;
+  height: 25px;
+}
+.circle_b {
+  width: 20px;
+  height: 20px;
+}
+/* End Icon & Button */
+/* ====== Common ============================================== */
+/* End common */
+/* ====== Layout ============================================== */
+#header {
+  width: 100%;
+  height: 100px;
+}
+.wrap_haed {
+  margin: 25 30;
+  width: 100%;
+}
+#footer {
+  background-color: #333333;
+  color: #FFF;
+}
+/* End Layout */
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
