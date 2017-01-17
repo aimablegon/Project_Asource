@@ -45,9 +45,11 @@ textarea {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 a:hover {
   text-decoration: none;
+  color: #FFF;
 }
 a:focus {
   text-decoration: none;
@@ -89,8 +91,8 @@ img {
   height: 30px;
 }
 .btn_close {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 .circle_a {
   width: 25px;
@@ -101,42 +103,134 @@ img {
   height: 20px;
 }
 i {
-  font-size: 25px;
+  font-size: 20px;
 }
 /* End Icon & Button */
-/* ====== Common ============================================== */
-.gnb_list {
-  outline: 1px solid #F00;
+.container {
+  outline: 1px #CCC solid;
 }
-/* End common */
-/* ====== Layout ============================================== */
+.container-fluid {
+  outline: 1px #CCC solid;
+}
+/* ====== header ============================================== */
 #header {
   width: 100%;
-  height: 100px;
+  height: 140px;
 }
 .wrap_haed {
   width: 100%;
+  position: relative;
 }
 .logo {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  font-size: initial;
-  margin: 30px;
+  margin: 30px 40px;
 }
 .gnb {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  font-size: initial;
   float: right;
-  margin: 43px 15px 30px;
+  margin: 43px 40px 30px;
 }
+.gnb i {
+  font-size: 25px;
+}
+.gnb_list {
+  display: none;
+  width: 100px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.gnb_li {
+  border-left: 1px #CCC solid;
+  border-bottom: 1px #CCC solid;
+  border-right: 1px #CCC solid;
+}
+.gnb_li:first-child {
+  border-top: 1px #CCC solid;
+}
+.gnb_li button {
+  width: 100px;
+}
+.gnb_close button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.lnb {
+  background-color: #CCC;
+  height: 40px;
+  width: 100%;
+}
+.wrap_lnb {
+  width: 100%;
+  padding: 8px 0;
+}
+.wrap_lnb ul {
+  width: 360px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrap_lnb ul li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 16px;
+  vertical-align: top;
+  width: 80px;
+}
+.wrap_lnb ul .icon_lnb {
+  width: 20px;
+}
+.wrap_lnb .mypage_lnb {
+  display: none;
+}
+/* End header */
+/* ====== Footer ============================================== */
 #footer {
   background-color: #333333;
   color: #FFF;
+  width: 100%;
+  font-size: 12px;
 }
-/* End Layout */
+.wrap_foot {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.wrap_foot .foot_logo {
+  width: 140px;
+  float: left;
+  margin: 35px 30px 35px 0;
+  height: 30px;
+}
+.wrap_foot .foot_contents {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 450px;
+}
+.address div {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.footer_menu {
+  width: 420px;
+}
+.footer_menu li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 5px 5px;
+}
+.footer_menu li:first-child {
+  padding-left: 0;
+}
+/* End footer */
 .mt15 {
   margin-top: 15px;
 }
@@ -161,5 +255,6 @@ i {
 .mb30 {
   margin-bottom: 30px;
 }
+/*Contants*/
 
 /*# sourceMappingURL=style.css.map */

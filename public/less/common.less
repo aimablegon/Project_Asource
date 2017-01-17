@@ -7,8 +7,10 @@ dl,ul,ol,li{list-style:none;}
 textarea{resize:none;}
 a{
     text-decoration: none;
+    color:@main-color;
     &:hover{
         text-decoration: none;
+        color:@sub3-color;
     }
     &:focus{
         text-decoration: none;
@@ -33,75 +35,164 @@ img {width:100%; heigth:100%;}
 /* End reset */
 
 /* ====== Icon & Button ======================================== */
-.btn{
-
-}
 .btn_a{
-  height: 40px;
+    height: 40px;
 }
 .btn_b{
-  width: 105px;
-  height: 30px;
+    width: 105px;
+    height: 30px;
 }
 .btn_c{
-  width: 60px;
-  height: 30px;
+    width: 60px;
+    height: 30px;
 }
 .btn_close{
-  width: 20px;
-  height:20px;
+    width: @icon-b;
+    height:@icon-b;
 }
 .circle_a{
-  width: 25px;
-  height:25px;
+    width: @icon-b;
+    height:@icon-b;
 }
 .circle_b{
-  width: 20px;
-  height:20px;
+    width: @icon-s;
+    height:@icon-s;
 }
 i{
-  font-size: @iconfont-size;
+    font-size: @icon-s;
 }
 
 
 /* End Icon & Button */
 
-
-
-/* ====== Common ============================================== */
-.gnb_list{
-  outline: @out;
+.container{
+    outline: @btn-out;
 }
-/* End common */
+.container-fluid{
+    outline: @btn-out;
+}
 
-
-
-
-/* ====== Layout ============================================== */
+/* ====== header ============================================== */
 #header{
-  width: 100%;
-  height: 100px;
+    width: 100%;
+    height: 140px;
 }
 .wrap_haed{
-  width: 100%;
+    width: 100%;
+    position: relative;
 }
 .logo{
-  .inlineblock();
-  margin: 30px;
+    .inlineblock();
+    margin: 30px 40px;
 }
 .gnb{
-  .inlineblock();
-  float: right;
-  margin: 43px 15px 30px;
+    .inlineblock();
+    float: right;
+    margin: 43px 40px 30px;
+      i{
+          font-size: @icon-b;
+      }
+}
+.gnb_list{display: none;
+    width:100px;
+    position: absolute;
+    top:40px;
+    right:40px;
+}
+.gnb_li{
+    border-left: @btn-out;
+    border-bottom: @btn-out;
+    border-right: @btn-out;
+      &:first-child{
+          border-top: @btn-out;
+      }
+      button{
+          width: 100px;
+      }
+}
+.gnb_close{
+    button{
+        position: absolute;
+        top:-10px;
+        right:-10px;
+    }
 }
 
+//lnb
+.lnb{
+    background-color: @sub2-color;
+    height:40px;
+    width: 100%;
+}
+.wrap_lnb{
+    width: 100%;
+    padding: 8px 0;
+      ul{
+          width: 360px;
+          margin: 0 auto;
+          text-align: center;
+            li{
+              .inlineblock();
+              font-size: @menu-size;
+              vertical-align: top;
+              width: 80px;
+            }
+            .icon_lnb{
+                width: @icon-s;
+            }
+
+      }
+      .course_lnb{
+
+      }
+      .mypage_lnb{
+          display: none;
+      }
+}
+/* End header */
+
+
+
+
+/* ====== Footer ============================================== */
 
 #footer{
-  background-color:#333333;
-  color:#FFF;
+    background-color:#333333;
+    color:#FFF;
+    width:100%;
+    font-size: @footer-size;
 }
-
-/* End Layout */
+.wrap_foot{
+    width: 80%;
+    margin: 0 auto;
+    padding:20px 0;
+      .foot_logo{
+          width: 140px;
+          float:left;
+          margin: 35px 30px 35px 0;
+          height: 30px;
+      }
+      .foot_contents{
+          .inlineblock();
+          width: 450px;
+      }
+}
+.address{
+    div{
+      .inlineblock();
+    }
+}
+.footer_menu{
+    width: 420px;
+      li{
+          .inlineblock();
+          padding:0 5px 5px;
+            &:first-child{
+              padding-left: 0;
+            }
+      }
+}
+/* End footer */
 
 
 
