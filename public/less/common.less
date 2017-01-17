@@ -39,12 +39,28 @@ img {width:100%; heigth:100%;}
     height: 40px;
 }
 .btn_b{
+    width:140px;
+    height: 40px;
+}
+.btn_c{
     width: 105px;
     height: 30px;
 }
-.btn_c{
+.btn_d{
     width: 60px;
     height: 30px;
+}
+.btn_vide{
+    border:1px @main-color solid;
+    .radius();
+    background-color:@sub3-color;
+    color:@main-color;
+}
+.btn_full{
+  border:1px @main-color solid;
+  .radius();
+  background-color:@main-color;
+  color:@sub3-color;
 }
 .btn_close{
     width: @icon-b;
@@ -83,12 +99,12 @@ i{
 }
 .logo{
     .inlineblock();
-    margin: 30px 40px;
+    margin: 30px 0 30px 40px;
 }
 .gnb{
     .inlineblock();
     float: right;
-    margin: 43px 40px 30px;
+    margin: 43px 40px 30px 0;
       i{
           font-size: @icon-b;
       }
@@ -163,18 +179,15 @@ i{
     font-size: @footer-size;
 }
 .wrap_foot{
-    width: 80%;
-    margin: 0 auto;
     padding:20px 0;
       .foot_logo{
-          width: 140px;
           float:left;
-          margin: 35px 30px 35px 0;
+          margin: 35px 30px;
           height: 30px;
+          text-align: center;
       }
       .foot_contents{
           .inlineblock();
-          width: 450px;
       }
 }
 .address{
@@ -183,7 +196,6 @@ i{
     }
 }
 .footer_menu{
-    width: 420px;
       li{
           .inlineblock();
           padding:0 5px 5px;

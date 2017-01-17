@@ -83,12 +83,32 @@ img {
   height: 40px;
 }
 .btn_b {
+  width: 140px;
+  height: 40px;
+}
+.btn_c {
   width: 105px;
   height: 30px;
 }
-.btn_c {
+.btn_d {
   width: 60px;
   height: 30px;
+}
+.btn_vide {
+  border: 1px #000 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #FFF;
+  color: #000;
+}
+.btn_full {
+  border: 1px #000 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #FFF;
 }
 .btn_close {
   width: 25px;
@@ -107,10 +127,10 @@ i {
 }
 /* End Icon & Button */
 .container {
-  outline: 1px #CCC solid;
+  outline: 1px #000 solid;
 }
 .container-fluid {
-  outline: 1px #CCC solid;
+  outline: 1px #000 solid;
 }
 /* ====== header ============================================== */
 #header {
@@ -125,14 +145,14 @@ i {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  margin: 30px 40px;
+  margin: 30px 0 30px 40px;
 }
 .gnb {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   float: right;
-  margin: 43px 40px 30px;
+  margin: 43px 40px 30px 0;
 }
 .gnb i {
   font-size: 25px;
@@ -145,12 +165,12 @@ i {
   right: 40px;
 }
 .gnb_li {
-  border-left: 1px #CCC solid;
-  border-bottom: 1px #CCC solid;
-  border-right: 1px #CCC solid;
+  border-left: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  border-right: 1px #000 solid;
 }
 .gnb_li:first-child {
-  border-top: 1px #CCC solid;
+  border-top: 1px #000 solid;
 }
 .gnb_li button {
   width: 100px;
@@ -197,29 +217,23 @@ i {
   font-size: 12px;
 }
 .wrap_foot {
-  width: 80%;
-  margin: 0 auto;
   padding: 20px 0;
 }
 .wrap_foot .foot_logo {
-  width: 140px;
   float: left;
-  margin: 35px 30px 35px 0;
+  margin: 35px 30px;
   height: 30px;
+  text-align: center;
 }
 .wrap_foot .foot_contents {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  width: 450px;
 }
 .address div {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-}
-.footer_menu {
-  width: 420px;
 }
 .footer_menu li {
   display: inline-block;
@@ -256,5 +270,35 @@ i {
   margin-bottom: 30px;
 }
 /*Contants*/
+#wrapper {
+  text-align: center;
+}
+/* ======== Content_top ============================ */
+.contents {
+  padding: 35px 0;
+}
+.content_top {
+  text-align: center;
+}
+.content_top .content_title {
+  margin: 20px 0 15px;
+}
+.content_top .title_img {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto 70px;
+}
+.content_top .title_img img {
+  width: 100%;
+}
+.content_top .content_btn button {
+  margin: 0 5px;
+}
+/* End content_top*/
+/* ======== Content_bottom ============================ */
+.teacher span {
+  font-size: 20px;
+}
+/* End content_bottom*/
 
 /*# sourceMappingURL=style.css.map */
