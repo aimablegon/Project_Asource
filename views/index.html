@@ -34,18 +34,18 @@
                       <div class="gnb_menu">
                           <ul>
                               <li class="gnb_li">
-                                  <button class="btn_a">로그인</button>
+                                  <button class="btn_a" type="button" name="button">로그인</button>
                               </li>
                               <li class="gnb_li">
-                                  <button class="btn_a">My Page</button>
+                                  <a class="btn_a" href="mypage.html">My Page</a>
                               </li>
                               <li class="gnb_li">
-                                  <button class="btn_a"><i class="glyphicon glyphicon-bell"></i></button>
+                                  <a class="btn_a" href="#"><i class="glyphicon glyphicon-bell"></i></a>
                               </li>
                           </ul>
                       </div>
                       <div class="gnb_close">
-                          <button class="btn_close"><i class="glyphicon glyphicon-remove"></i></button>
+                          <button class="btn_close" type="button" name="button"><i class="glyphicon glyphicon-remove"></i></button>
                       </div>
                   </div>
               </div>
@@ -57,14 +57,14 @@
                       <li class="icon_lnb"><i class="glyphicon glyphicon-chevron-left"></i></li>
                       <li><a href="#">CSS</a></li>
                       <li class="icon_lnb"><i class="glyphicon glyphicon-chevron-right"></i></li>
-                      <li><a href="#">javascript</a></li>
+                      <li style="margin:0 10px;"><a href="#">javascript</a></li>
                   </ul>
                   <ul class="mypage_lnb">
                       <li><a href="myQa.html">내질문</a></li>
                       <li class="icon_lnb"><i class="glyphicon glyphicon-chevron-left"></i></li>
                       <li><a href="myBuy.html">구매내역</a></li>
                       <li class="icon_lnb"><i class="glyphicon glyphicon-chevron-right"></i></li>
-                      <li><a href="myBookmark">즐겨찾기</a></li>
+                      <li><a href="myBookmark.html">즐겨찾기</a></li>
                   </ul>
               </div>
           </div>
@@ -73,20 +73,158 @@
 
       <!-- Wrapper -->
       <div id="wrapper">
-        <div class="container">
-          <div class="contents">
-              <!-- <span>asource</span> -->
+          <div class="container">
+            <div class="contents row">
+                <div class="content_top col-md-offset-3 col-md-6 ">
+                    <div class="content_title">
+                        <span class="title_text">
+                          HTML를 기초부터 고급까지 웹퍼블리셔가 될 수 있도록
+                          <br /> 누구든지 바로 시작 할 수 있습니다.
+                        </span>
+                    </div>
+                    <div class="title_img">
+                        <img src="/images/html_logo.jpg" alt="html로고" />
+                    </div>
+                    <div class="content_btn">
+                        <button class="btn_b btn_vide" type="button" name="button">쿠폰등록</button>
+                        <button class="btn_b btn_full" type="button" name="button">강의보기</button>
+                    </div>
+                </div>
+            </div>
           </div>
-        </div>
+          <div class="container-fluid lnb"></div>
+          <div class="container">
+              <div class="contents">
+                  <div class="content_bottom">
+                      <div class="teacher">
+                          <span>둔기</span>
+                          <i class="glyphicon glyphicon-user"></i>
+                      </div>
+
+                      <div class="course old">
+                          <div class="course_btn line_top">
+                              <button class="btn_c btn_full" type="button" name="button">오래된순</button>
+                              <div>
+                                  <img src="images/list_line.png" alt="선">
+                              </div>
+                              <button class="btn_c btn_vide" type="button" name="button">최신순</button>
+                          </div>
+                          <div class="course_list">
+                              <ul>
+                                  <li class="box_right">
+                                      <br />
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_b.png" alt="원">
+                                      </div>
+                                      <button type="button" name="button">HTML이란?</button>
+                                  </li>
+                                  <li class="box_left">
+                                      <br />
+                                      <button type="button" name="button">HTML 문서만들기</button>
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_b.png" alt="원">
+                                      </div>
+                                  </li>
+                                  <li class="box_right">
+                                      <br />
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_b.png" alt="원">
+                                      </div>
+                                      <button type="button" name="button">웹표준이란?</button>
+                                  </li>
+                                  <li class="box_left">
+                                      <br />
+                                      <button type="button" name="button">HTML 문법</button>
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_bs.png" alt="원에 별">
+                                      </div>
+                                  </li>
+                                  <li class="box_right">
+                                      <br />
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_b.png" alt="원">
+                                      </div>
+                                      <button type="button" name="button">추가정보를 만드는 속성</button>
+                                  </li>
+                                  <li class="box_left">
+                                    <br />
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="course_btn line_bottom">
+                              <div>
+                                  <img src="images/list_line_2.png" alt="선">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="course new">
+                          <div class="course_btn line_top">
+                              <button class="btn_c btn_vide" type="button" name="button">오래된순</button>
+                              <div>
+                                  <img src="images/list_line.png" alt="선">
+                              </div>
+                              <button class="btn_c btn_full" type="button" name="button">최신순</button>
+                          </div>
+                          <div class="course_list">
+                              <ul>
+                                  <li class="box_right">
+                                    <br />
+                                    <div class="circle_a circle">
+                                      <img src="images/circle_bs.png" alt="원 안에 별">
+                                    </div>
+                                    <button type="button" name="button">추가정보를 만드는 속성</button>
+                                  </li>
+                                  <li class="box_left">
+                                      <br />
+                                      <button type="button" name="button">HTML 문법</button>
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_b.png" alt="원">
+                                      </div>
+                                  </li>
+                                  <li class="box_right">
+                                      <br />
+                                      <div class="circle_a circle">
+                                        <img src="images/circle_bs.png" alt="원 안에 별">
+                                      </div>
+                                      <button type="button" name="button">웹표준이란?</button>
+                                  </li>
+                                  <li class="box_left">
+                                      <br />
+                                      <button type="button" name="button">HTML 문서만들기</button>
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_b.png" alt="원">
+                                      </div>
+                                  </li>
+                                  <li class="box_right">
+                                      <br />
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_b.png" alt="원">
+                                      </div>
+                                      <button type="button" name="button">HTML이란?</button>
+                                  </li>
+                                  <li class="box_left">
+                                    <br />
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="course_btn line_bottom">
+                              <div>
+                                  <img src="images/list_line_2.png" alt="선">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
       <!-- End Wrapper -->
 
       <!-- footer -->
       <div id="footer">
           <div class="container">
-              <div class="wrap_foot">
-                  <div class="foot_logo"><h3>· A source ·</h3></div>
-                  <div class="foot_contents">
+              <div class="wrap_foot row">
+                  <div class="foot_logo col-md-offset-3 col-md-3"><h3>· A source ·</h3></div>
+                  <div class="foot_contents col-md-6">
                       <div class="address">
                           <div class="footer_menu">
                               <ul>
@@ -121,5 +259,55 @@
           </div>
       </div>
       <!-- End footer -->
+
+      <script type="text/javascript">
+          window.onload = function(){
+              $('.line_top').css({
+                left : '50%',
+                marginLeft : function(){
+                    var courseBtn = $(this).css('width');
+                    return -parseInt(courseBtn)/2 + 'px';
+                },
+                top :  function(){
+                    var courseBtn = $(this).css('height');
+                    return -parseInt(courseBtn)/2 + 'px';
+                },
+              });
+              $('.line_bottom').css({
+                left : '50%',
+                marginLeft : function(){
+                    var courseBtn = $(this).css('width');
+                    return -parseInt(courseBtn)/2 + 'px';
+                },
+                top :  function(){
+                    var courseBtn = $('.course_list').css('height');
+                    return parseInt(courseBtn) + 5 + 'px';
+                },
+              });
+              $('.box_left').css({
+                  width : function(){
+                      var lineWidth = $('.course').css('width');
+                      return parseInt(lineWidth)/2 + 1 + 'px';
+                  }
+              });
+              $('.box_right').css({
+                  width : function(){
+                      var lineWidth = $('.course').css('width');
+                      return parseInt(lineWidth)/2 + 'px';
+                  },
+                  marginLeft : function(){
+                      var lineWidth = $('.course').css('width');
+                      return parseInt(lineWidth)/2 + 'px';
+                  }
+              });
+              $('.circle').css({
+                  left :"50%",
+                  marginLeft : function(){
+                      var courseBtn = $(this).css('width');
+                      return -parseInt(courseBtn)/2 + 'px';
+                  }
+              })
+          }
+      </script>
   </body>
 </html>
