@@ -28,6 +28,9 @@
 
 
 /* ======== Content_bottom ============================ */
+.container_bottom{
+    display: none;
+}
 .teacher{
     span{
         font-size: @icon-s;
@@ -39,6 +42,7 @@
 }
 .course_btn{
     position: absolute;
+    z-index: 10;
     div{
       .inlineblock();
       img{
@@ -72,7 +76,6 @@
         .inlineblock();
         margin-right: 20px;
       }
-
 }
 .box_right{
     border-left:@btn-out;
@@ -81,6 +84,8 @@
         .inlineblock();
         margin-left: 20px;
       }
-
+}
+.new{
+    display: none;
 }
 /* End content_bottom*/

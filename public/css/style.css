@@ -166,8 +166,11 @@ i {
   position: absolute;
   top: 40px;
   right: 40px;
+  background-color: #FFF;
 }
 .gnb_li {
+  text-align: center;
+  width: 100px;
   border-left: 1px #000 solid;
   border-bottom: 1px #000 solid;
   border-right: 1px #000 solid;
@@ -175,8 +178,8 @@ i {
 .gnb_li:first-child {
   border-top: 1px #000 solid;
 }
-.gnb_li button {
-  width: 100px;
+.gnb_li a {
+  line-height: 40px;
 }
 .gnb_close button {
   position: absolute;
@@ -299,6 +302,9 @@ i {
 }
 /* End content_top*/
 /* ======== Content_bottom ============================ */
+.container_bottom {
+  display: none;
+}
 .teacher span {
   font-size: 20px;
 }
@@ -309,6 +315,7 @@ i {
 }
 .course_btn {
   position: absolute;
+  z-index: 10;
 }
 .course_btn div {
   display: inline-block;
@@ -352,6 +359,9 @@ i {
   *display: inline;
   *zoom: 1;
   margin-left: 20px;
+}
+.new {
+  display: none;
 }
 /* End content_bottom*/
 
