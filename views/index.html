@@ -113,14 +113,19 @@
                               <ul>
                                   <li class="box_right">
                                       <br />
+                                      <br />
                                       <div class="circle_a circle">
                                           <img src="images/circle_b.png" alt="원">
                                       </div>
-                                      <button type="button" name="button">HTML이란?</button>
+                                      <div class="box_right_btn">
+                                          <button type="button" name="button">HTML이란?</button>
+                                      </div>
                                   </li>
                                   <li class="box_left">
                                       <br />
-                                      <button type="button" name="button">HTML 문서만들기</button>
+                                      <div class="box_left_btn">
+                                          <button type="button" name="button">HTML 문서만들기</button>
+                                      </div>
                                       <div class="circle_a circle">
                                           <img src="images/circle_b.png" alt="원">
                                       </div>
@@ -128,25 +133,32 @@
                                   <li class="box_right">
                                       <br />
                                       <div class="circle_a circle">
-                                          <img src="images/circle_b.png" alt="원">
+                                          <img src="images/circle_bs.png" alt="원안에 별">
                                       </div>
-                                      <button type="button" name="button">웹표준이란?</button>
+                                      <div class="box_right_btn">
+                                          <button type="button" name="button">웹표준이란?</button>
+                                      </div>
                                   </li>
                                   <li class="box_left">
                                       <br />
-                                      <button type="button" name="button">HTML 문법</button>
+                                      <div class="box_left_btn">
+                                          <button type="button" name="button">HTML 문법</button>
+                                      </div>
                                       <div class="circle_a circle">
-                                          <img src="images/circle_bs.png" alt="원에 별">
+                                          <img src="images/circle_b.png" alt="원">
                                       </div>
                                   </li>
                                   <li class="box_right">
                                       <br />
                                       <div class="circle_a circle">
-                                          <img src="images/circle_b.png" alt="원">
+                                          <img src="images/circle_bs.png" alt="원안에 별">
                                       </div>
-                                      <button type="button" name="button">추가정보를 만드는 속성</button>
+                                      <div class="box_right_btn">
+                                          <button type="button" name="button">추가정보를 만드는 속성</button>
+                                      </div>
                                   </li>
                                   <li class="box_left">
+                                    <br />
                                     <br />
                                   </li>
                               </ul>
@@ -169,28 +181,37 @@
                               <ul>
                                   <li class="box_right">
                                     <br />
+                                    <br />
                                     <div class="circle_a circle">
-                                      <img src="images/circle_bs.png" alt="원 안에 별">
-                                    </div>
-                                    <button type="button" name="button">추가정보를 만드는 속성</button>
-                                  </li>
-                                  <li class="box_left">
-                                      <br />
-                                      <button type="button" name="button">HTML 문법</button>
-                                      <div class="circle_a circle">
-                                          <img src="images/circle_b.png" alt="원">
-                                      </div>
-                                  </li>
-                                  <li class="box_right">
-                                      <br />
-                                      <div class="circle_a circle">
                                         <img src="images/circle_bs.png" alt="원 안에 별">
-                                      </div>
-                                      <button type="button" name="button">웹표준이란?</button>
+                                    </div>
+                                    <div class="box_right_btn">
+                                        <button type="button" name="button">추가정보를 만드는 속성</button>
+                                    </div>
                                   </li>
                                   <li class="box_left">
                                       <br />
-                                      <button type="button" name="button">HTML 문서만들기</button>
+                                      <div class="box_left_btn">
+                                          <button type="button" name="button">HTML 문법</button>
+                                      </div>
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_b.png" alt="원">
+                                      </div>
+                                  </li>
+                                  <li class="box_right">
+                                      <br />
+                                      <div class="circle_a circle">
+                                          <img src="images/circle_bs.png" alt="원 안에 별">
+                                      </div>
+                                      <div class="box_right_btn">
+                                          <button type="button" name="button">웹표준이란?</button>
+                                      </div>
+                                  </li>
+                                  <li class="box_left">
+                                      <br />
+                                      <div class="box_left_btn">
+                                          <button type="button" name="button">HTML 문서만들기</button>
+                                      </div>
                                       <div class="circle_a circle">
                                           <img src="images/circle_b.png" alt="원">
                                       </div>
@@ -200,9 +221,12 @@
                                       <div class="circle_a circle">
                                           <img src="images/circle_b.png" alt="원">
                                       </div>
-                                      <button type="button" name="button">HTML이란?</button>
+                                      <div class="box_right_btn">
+                                          <button type="button" name="button">HTML이란?</button>
+                                      </div>
                                   </li>
                                   <li class="box_left">
+                                    <br />
                                     <br />
                                   </li>
                               </ul>
@@ -262,51 +286,55 @@
 
       <script type="text/javascript">
           window.onload = function(){
-              $('.line_top').css({
-                left : '50%',
-                marginLeft : function(){
-                    var courseBtn = $(this).css('width');
-                    return -parseInt(courseBtn)/2 + 'px';
-                },
-                top :  function(){
-                    var courseBtn = $(this).css('height');
-                    return -parseInt(courseBtn)/2 + 'px';
-                },
-              });
-              $('.line_bottom').css({
-                left : '50%',
-                marginLeft : function(){
-                    var courseBtn = $(this).css('width');
-                    return -parseInt(courseBtn)/2 + 'px';
-                },
-                top :  function(){
-                    var courseBtn = $('.course_list').css('height');
-                    return parseInt(courseBtn) + 5 + 'px';
-                },
-              });
-              $('.box_left').css({
-                  width : function(){
-                      var lineWidth = $('.course').css('width');
-                      return parseInt(lineWidth)/2 + 1 + 'px';
-                  }
-              });
-              $('.box_right').css({
-                  width : function(){
-                      var lineWidth = $('.course').css('width');
-                      return parseInt(lineWidth)/2 + 'px';
-                  },
-                  marginLeft : function(){
-                      var lineWidth = $('.course').css('width');
-                      return parseInt(lineWidth)/2 + 'px';
-                  }
-              });
-              $('.circle').css({
-                  left :"50%",
+            $(window).resize(function(){
+                $('.line_top').css({
+                  left : '50%',
                   marginLeft : function(){
                       var courseBtn = $(this).css('width');
                       return -parseInt(courseBtn)/2 + 'px';
+                  },
+                  top :  function(){
+                      var courseBtn = $(this).css('height');
+                      return -parseInt(courseBtn)/2 + 'px';
+                  },
+                });
+                $('.line_bottom').css({
+                  left : '50%',
+                  marginLeft : function(){
+                      var courseBtn = $(this).css('width');
+                      return -parseInt(courseBtn)/2 + 'px';
+                  },
+                  top :  function(){
+                      var courseBtn = $(this).prev('.course_list').css('height');
+                      return parseInt(courseBtn) -15 + 'px';
                   }
-              })
+                });
+
+
+                $('.box_left').css({
+                    width : function(){
+                        var lineWidth = $('.course').css('width');
+                        return parseInt(lineWidth)/2 + 1 + 'px';
+                    }
+                });
+                $('.box_right').css({
+                    width : function(){
+                        var lineWidth = $('.course').css('width');
+                        return parseInt(lineWidth)/2 + 'px';
+                    },
+                    marginLeft : function(){
+                        var lineWidth = $('.course').css('width');
+                        return parseInt(lineWidth)/2 + 'px';
+                    }
+                });
+                $('.circle').css({
+                    left :"50%",
+                    marginLeft : function(){
+                        var courseBtn = $(this).css('width');
+                        return -parseInt(courseBtn)/2 + 'px';
+                    }
+                })
+            })
           }
       </script>
   </body>

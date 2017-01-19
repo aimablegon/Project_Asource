@@ -327,7 +327,7 @@ i {
   height: 30px;
 }
 .course_list {
-  margin: 30px 0;
+  margin: 40px 0;
   position: relative;
 }
 .course_list .circle {
@@ -337,14 +337,20 @@ i {
   border-right: 1px #000 solid;
   text-align: right;
 }
-.box_left span {
+.box_left .box_left_btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
   margin-right: 20px;
 }
 .box_right {
   border-left: 1px #000 solid;
   text-align: left;
 }
-.box_right span {
+.box_right .box_right_btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
   margin-left: 20px;
 }
 /* End content_bottom*/
