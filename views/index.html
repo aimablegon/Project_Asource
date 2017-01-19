@@ -36,11 +36,11 @@
                               <li class="gnb_li">
                                   <button class="btn_a" type="button" name="button">로그인</button>
                               </li>
-                              <li class="gnb_li">
-                                  <a class="btn_a" href="mypage.html">My Page</a>
+                              <li class="gnb_li btn_a">
+                                  <a style="line-height:38px;" href="mypage.html">My Page</a>
                               </li>
-                              <li class="gnb_li">
-                                  <a class="btn_a" href="#"><i class="glyphicon glyphicon-bell"></i></a>
+                              <li class="gnb_li btn_a">
+                                  <a style="line-height:44px;" href="#"><i class="glyphicon glyphicon-bell"></i></a>
                               </li>
                           </ul>
                       </div>
@@ -87,14 +87,14 @@
                     </div>
                     <div class="content_btn">
                         <button class="btn_b btn_vide" type="button" name="button">쿠폰등록</button>
-                        <button class="btn_b btn_full" type="button" name="button">강의보기</button>
+                        <button class="btn_b btn_full btn_view" type="button" name="button">강의보기</button>
                     </div>
                 </div>
             </div>
           </div>
           <div class="container-fluid lnb"></div>
-          <div class="container">
-              <div class="contents">
+          <div class="container container_bottom">
+              <div class="contents" id="standardWidth">
                   <div class="content_bottom">
                       <div class="teacher">
                           <span>둔기</span>
@@ -103,11 +103,11 @@
 
                       <div class="course old">
                           <div class="course_btn line_top">
-                              <button class="btn_c btn_full" type="button" name="button">오래된순</button>
+                              <button class="btn_c btn_full btn_old" type="button" name="button">오래된순</button>
                               <div>
                                   <img src="images/list_line.png" alt="선">
                               </div>
-                              <button class="btn_c btn_vide" type="button" name="button">최신순</button>
+                              <button class="btn_c btn_vide btn_new" type="button" name="button">최신순</button>
                           </div>
                           <div class="course_list">
                               <ul>
@@ -169,13 +169,14 @@
                               </div>
                           </div>
                       </div>
+
                       <div class="course new">
                           <div class="course_btn line_top">
-                              <button class="btn_c btn_vide" type="button" name="button">오래된순</button>
+                              <button class="btn_c btn_vide btn_old" type="button" name="button">오래된순</button>
                               <div>
                                   <img src="images/list_line.png" alt="선">
                               </div>
-                              <button class="btn_c btn_full" type="button" name="button">최신순</button>
+                              <button class="btn_c btn_full btn_new" type="button" name="button">최신순</button>
                           </div>
                           <div class="course_list">
                               <ul>
@@ -283,59 +284,9 @@
           </div>
       </div>
       <!-- End footer -->
-
+      <script type="text/javascript" src="js/scripts.js"></script>
       <script type="text/javascript">
-          window.onload = function(){
-            $(window).resize(function(){
-                $('.line_top').css({
-                  left : '50%',
-                  marginLeft : function(){
-                      var courseBtn = $(this).css('width');
-                      return -parseInt(courseBtn)/2 + 'px';
-                  },
-                  top :  function(){
-                      var courseBtn = $(this).css('height');
-                      return -parseInt(courseBtn)/2 + 'px';
-                  },
-                });
-                $('.line_bottom').css({
-                  left : '50%',
-                  marginLeft : function(){
-                      var courseBtn = $(this).css('width');
-                      return -parseInt(courseBtn)/2 + 'px';
-                  },
-                  top :  function(){
-                      var courseBtn = $(this).prev('.course_list').css('height');
-                      return parseInt(courseBtn) -15 + 'px';
-                  }
-                });
 
-
-                $('.box_left').css({
-                    width : function(){
-                        var lineWidth = $('.course').css('width');
-                        return parseInt(lineWidth)/2 + 1 + 'px';
-                    }
-                });
-                $('.box_right').css({
-                    width : function(){
-                        var lineWidth = $('.course').css('width');
-                        return parseInt(lineWidth)/2 + 'px';
-                    },
-                    marginLeft : function(){
-                        var lineWidth = $('.course').css('width');
-                        return parseInt(lineWidth)/2 + 'px';
-                    }
-                });
-                $('.circle').css({
-                    left :"50%",
-                    marginLeft : function(){
-                        var courseBtn = $(this).css('width');
-                        return -parseInt(courseBtn)/2 + 'px';
-                    }
-                })
-            })
-          }
       </script>
   </body>
 </html>
