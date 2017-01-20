@@ -1,6 +1,5 @@
 function resizeFn(){
 
-  console.log($('#standardWidth').width());
   $('.line_top').css({
     left : '50%',
     marginLeft : function(){
@@ -50,6 +49,14 @@ function resizeFn(){
   })
 }
 resizeFn();
+/*detail_box 기본*/
+function detailBox(){
+  $('.on').css({
+      display:'none'
+  }).next('.detail').css({
+      display:'block'
+  })
+}
 //Gnb
 $(function(){
     $('.gnb').click(function(){
@@ -77,6 +84,7 @@ $(function(){
             display : 'block'
         })
         resizeFn();
+        detailBox();
     })
 
     $('.btn_new').click(function(){
@@ -86,6 +94,7 @@ $(function(){
             display : 'block'
         })
         resizeFn();
+        detailBox();
     });
     $('.btn_old').click(function(){
         $(this).parents('.new').css({
@@ -94,5 +103,26 @@ $(function(){
             display : 'block'
         })
         resizeFn();
+        detailBox();
+    })
+})
+
+
+/*button click*/
+$(function(){
+
+    $('.course_list button').click(function(){
+        $('.on').removeClass('on').css({
+            display:'block'
+        }).next('.detail').css({
+            display:'none'
+        });
+        $(this).addClass('on').css({
+            display:'none'
+        }).next('.detail').css({
+            display:'block'
+        })
+
+
     })
 })

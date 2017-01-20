@@ -46,6 +46,10 @@ textarea {
 a {
   text-decoration: none;
   color: #000;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  text-align: center;
 }
 a:hover {
   text-decoration: none;
@@ -362,6 +366,22 @@ i {
 }
 .new {
   display: none;
+}
+.detail {
+  display: none;
+}
+.detail_icon {
+  margin: 10px 0;
+}
+.detail_icon i {
+  margin: 0 3px;
+}
+.detail_btn a {
+  vertical-align: top;
+  padding: 4px;
+}
+.detail_text {
+  margin: 10px 0 50px;
 }
 /* End content_bottom*/
 
