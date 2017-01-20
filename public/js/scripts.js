@@ -57,6 +57,7 @@ function detailBox(){
       display:'block'
   })
 }
+
 //Gnb
 $(function(){
     $('.gnb').click(function(){
@@ -111,7 +112,7 @@ $(function(){
 /*button click*/
 $(function(){
 
-    $('.course_list button').click(function(){
+    $('.course_list .list_title').click(function(){
         $('.on').removeClass('on').css({
             display:'block'
         }).next('.detail').css({
