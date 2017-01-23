@@ -49,6 +49,53 @@ function resizeFn(){
   })
 }
 resizeFn();
+
+function resizeBoxFn(){
+  $('.fix_line_top').css({
+    left : '50%',
+    marginLeft : function(){
+        var courseBtn = $(this).css('width');
+        return -parseInt(courseBtn)/2 + 'px';
+    },
+    top :  '28px'
+  });
+  // $('.fix_line_bottom').css({
+  //   left : '50%',
+  //   marginLeft : function(){
+  //       var courseBtn = $(this).css('width');
+  //       return -parseInt(courseBtn)/2 + 'px';
+  //   },
+  //   top :  function(){
+  //       var courseBtn = $('#fixed_box').css('height');
+  //       return parseInt(courseBtn) + 'px';
+  //   }
+  // });
+  $('.fix_list_box .box_left').css({
+      width : function(){
+          var lineWidth = $('.fix_list_box').css('width');
+          return parseInt(lineWidth)/2 + 1 + 'px';
+      }
+  });
+  $('.fix_list_box .box_right').css({
+      width : function(){
+          var lineWidth = $('.fix_list_box').css('width');
+          return parseInt(lineWidth)/2 + 'px';
+      },
+      marginLeft : function(){
+          var lineWidth = $('.fix_list_box').css('width');
+          return parseInt(lineWidth)/2 + 'px';
+      }
+  });
+  $('.circle').css({
+      left :"50%",
+      marginLeft : function(){
+          var courseBtn = $(this).css('width');
+          return -parseInt(courseBtn)/2 + 'px';
+      }
+  })
+}
+resizeBoxFn()
+
 /*detail_box 기본*/
 function detailBox(){
   $('.on').css({
@@ -77,6 +124,7 @@ $(function(){
 
 $(window).resize(function(){
   resizeFn();
+  resizeBoxFn();
 });
 /*click*/
 $(function(){
@@ -109,7 +157,7 @@ $(function(){
 })
 
 
-/*button click*/
+/*Main button click*/
 $(function(){
 
     $('.course_list .list_title').click(function(){
@@ -125,5 +173,14 @@ $(function(){
         })
 
 
+    })
+})
+
+
+/* courseView fixed_left_btn*/
+$(function(){
+    $('.left_btn button').click(function(){
+        $('.fix_list').toggle();
+        resizeBoxFn();
     })
 })

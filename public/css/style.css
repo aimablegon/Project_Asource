@@ -118,6 +118,9 @@ img {
   width: 25px;
   height: 25px;
 }
+.btn_fix {
+  font-size: 40px;
+}
 .circle_a {
   width: 25px;
   height: 25px;
@@ -128,6 +131,9 @@ img {
 .circle_b {
   width: 20px;
   height: 20px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 i {
   font-size: 20px;
@@ -239,7 +245,7 @@ i {
   font-size: 12px;
 }
 .wrap_foot {
-  padding: 20px 0;
+  padding: 18px 0;
 }
 .wrap_foot .foot_logo {
   float: left;
@@ -372,6 +378,7 @@ i {
 /* ====== video ============================================== */
 .view_detail {
   text-align: left;
+  margin-bottom: 15px;
 }
 .view_detail h2 {
   display: inline-block;
@@ -387,20 +394,63 @@ i {
   float: right;
   margin-right: 10px;
 }
-.view_video {
-  margin: 10px 0;
-  width: 100%;
-}
 .view_video video {
   width: 100%;
 }
 /* End video */
 /* ====== fixed_button ============================================== */
-.fix .fix_left {
+.left_btn {
   position: fixed;
+  top: 145px;
+  left: 0;
 }
-.fix .fix_right {
+.right_btn {
   position: fixed;
+  top: 145px;
+  right: 0;
+}
+.fix_list {
+  outline: 1px #F00 solid;
+  width: 320px;
+  height: 600px;
+  overflow-y: scroll;
+  position: absolute;
+  background-color: #FFF;
+  top: 5px;
+  left: 0;
+  display: none;
+}
+.list_lnb li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 16px;
+  vertical-align: top;
+  width: 80px;
+}
+.list_lnb .icon_lnb {
+  width: 20px;
+}
+.fix_line_top {
+  position: absolute;
+}
+.fix_line_bottom img {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  top: -15px;
+}
+.fix_list_box {
+  position: relative;
+  width: 100%;
+}
+.fix_list_box .box_left_btn {
+  margin-right: 15px;
+  margin-left: 5px;
+}
+.fix_list_box .box_right_btn {
+  margin-left: 15px;
+  margin-right: 5px;
 }
 /* End fixed_button */
 

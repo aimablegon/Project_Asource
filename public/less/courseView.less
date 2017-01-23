@@ -1,6 +1,7 @@
 /* ====== video ============================================== */
 .view_detail{
     text-align: left;
+    margin-bottom: 15px;
     h2{
         .inlineblock();
         text-align: left;
@@ -15,20 +16,68 @@
 
 
 .view_video{
-    margin: 10px 0;
-    width: 100%;
+
     video{
         width: 100%;
     }
 }
 /* End video */
 /* ====== fixed_button ============================================== */
-.fix{
-    .fix_left{
-        position:fixed;
+.left_btn{
+    position:fixed;
+    top:145px;
+    left:0;
+}
+.right_btn{
+    position:fixed;
+    top:145px;
+    right:0;
+}
+.fix_list{ outline: 1px #F00 solid;
+    width: 320px;
+    height: 600px;
+    overflow-y: scroll;;
+    position: absolute;
+    background-color: #FFF;
+    top:5px;
+    left: 0;
+    display: none;
+}
+.list_lnb{
+    li{
+      .inlineblock();
+      font-size: @menu-size;
+      vertical-align: top;
+      width: 80px;
     }
-    .fix_right{
-        position:fixed;
+    .icon_lnb{
+        width: @icon-s;
     }
 }
+.fix_line_top{
+    position: absolute;
+}
+.fix_line_bottom{
+    // position: absolute;
+    img{
+        width: 60px;
+        height:30px;
+        position: relative;
+        top:-15px;
+    }
+}
+
+.fix_list_box{
+    position: relative;
+    width: 100%;
+      .box_left_btn{
+          margin-right: 15px;
+          margin-left: 5px;
+      }
+      .box_right_btn{
+          margin-left: 15px;
+          margin-right: 5px;
+      }
+}
+
 /* End fixed_button */
