@@ -144,7 +144,6 @@ i {
 }
 .view_video {
   outline: 1px #F00 solid;
-  width: 100%;
 }
 /* ====== header ============================================== */
 #header {
@@ -226,6 +225,12 @@ i {
   display: none;
 }
 /* End header */
+/* ====== wrapper ============================================== */
+#wrapper {
+  text-align: center;
+  position: relative;
+}
+/* End wrapper */
 /* ====== Footer ============================================== */
 #footer {
   background-color: #333333;
@@ -263,9 +268,6 @@ i {
 }
 /* End footer */
 /*Contants*/
-#wrapper {
-  text-align: center;
-}
 /* ======== Content_top ============================ */
 .contents {
   padding: 35px 0;
@@ -367,6 +369,7 @@ i {
   margin: 10px 0 50px;
 }
 /* End content_bottom*/
+/* ====== video ============================================== */
 .view_detail {
   text-align: left;
 }
@@ -386,6 +389,19 @@ i {
 }
 .view_video {
   margin: 10px 0;
+  width: 100%;
 }
+.view_video video {
+  width: 100%;
+}
+/* End video */
+/* ====== fixed_button ============================================== */
+.fix .fix_left {
+  position: fixed;
+}
+.fix .fix_right {
+  position: fixed;
+}
+/* End fixed_button */
 
 /*# sourceMappingURL=style.css.map */
