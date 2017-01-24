@@ -33,17 +33,28 @@
     top:145px;
     right:0;
 }
-.fix_list{ outline: 1px #F00 solid;
+.fix{ outline: 1px #F00 solid;
     width: 320px;
     height: 600px;
     overflow-y: scroll;;
     position: absolute;
     background-color: #FFF;
-    top:5px;
+    top:45px;
+    // display: none;
+}
+.fix_list{
     left: 0;
+    margin: 0;
     display: none;
 }
+.fix_epil_qa{
+    right: 0;
+    // display: none;
+}
+
+//left_button
 .list_lnb{
+    margin: 5px;
     li{
       .inlineblock();
       font-size: @menu-size;
@@ -80,4 +91,85 @@
       }
 }
 
+
+//right_button
+.btn_epil_qa{
+    margin: 5px;
+}
+.new_epil_qa{
+  margin: 20px 0;
+    input{
+        width: 290px;
+        .radius();
+        margin-bottom: 5px;
+    }
+    textarea{
+        .radius();
+    }
+}
+.old_epil_qa{
+    text-align: left;
+    .fix_common{
+        .radius();
+        border: 1px #a9a9a9 solid;
+        padding: 5px 10px;
+        width: 283px;
+        margin: 7px auto;
+          textarea{
+              .radius();
+              margin-top: 10px;
+          }
+    }
+}
+
+.user_info{
+    padding:0 5px 5px;
+        .info_date{
+            float: right;
+        }
+}
+.user_text{
+    border-top: 1px #a9a9a9 solid;
+    padding: 5px 5px 0 5px;
+}
+.user_title{
+    border-top: 1px #a9a9a9 solid;
+    padding: 5px;
+}
+.user_reply{
+    margin:10px 5px 0 20px;
+}
+.old_epil_qa{
+    .course_qa{
+      .btn_right{
+          margin: 0
+      }
+    }
+}
+.login_myqa{
+  // display: none;
+    margin: 20px 0;
+    .user_title{
+        border: none;
+    }
+    .qa_plus{
+        margin: 15px auto 0;
+          a{
+            padding: 4px 20px;
+          }
+    }
+}
+.logout_maqa{
+  display: none;
+    margin-top:60px;
+      .logout_notice{
+          margin: 10px;
+      }
+}
+.fix_qa{
+    display: none;
+}
+.fix_myqa{
+    display: none;
+}
 /* End fixed_button */

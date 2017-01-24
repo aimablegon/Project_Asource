@@ -53,7 +53,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #FFF;
+  color: #000;
 }
 a:focus {
   text-decoration: none;
@@ -91,7 +91,7 @@ img {
   height: 40px;
 }
 .btn_c {
-  width: 105px;
+  width: 95px;
   height: 30px;
 }
 .btn_d {
@@ -120,6 +120,10 @@ img {
 }
 .btn_fix {
   font-size: 40px;
+}
+.btn_right {
+  text-align: right;
+  margin-right: 20px;
 }
 .circle_a {
   width: 25px;
@@ -409,16 +413,25 @@ i {
   top: 145px;
   right: 0;
 }
-.fix_list {
+.fix {
   outline: 1px #F00 solid;
   width: 320px;
   height: 600px;
   overflow-y: scroll;
   position: absolute;
   background-color: #FFF;
-  top: 5px;
+  top: 45px;
+}
+.fix_list {
   left: 0;
+  margin: 0;
   display: none;
+}
+.fix_epil_qa {
+  right: 0;
+}
+.list_lnb {
+  margin: 5px;
 }
 .list_lnb li {
   display: inline-block;
@@ -451,6 +464,87 @@ i {
 .fix_list_box .box_right_btn {
   margin-left: 15px;
   margin-right: 5px;
+}
+.btn_epil_qa {
+  margin: 5px;
+}
+.new_epil_qa {
+  margin: 20px 0;
+}
+.new_epil_qa input {
+  width: 290px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.new_epil_qa textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.old_epil_qa {
+  text-align: left;
+}
+.old_epil_qa .fix_common {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px #a9a9a9 solid;
+  padding: 5px 10px;
+  width: 283px;
+  margin: 7px auto;
+}
+.old_epil_qa .fix_common textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.user_info {
+  padding: 0 5px 5px;
+}
+.user_info .info_date {
+  float: right;
+}
+.user_text {
+  border-top: 1px #a9a9a9 solid;
+  padding: 5px 5px 0 5px;
+}
+.user_title {
+  border-top: 1px #a9a9a9 solid;
+  padding: 5px;
+}
+.user_reply {
+  margin: 10px 5px 0 20px;
+}
+.old_epil_qa .course_qa .btn_right {
+  margin: 0;
+}
+.login_myqa {
+  margin: 20px 0;
+}
+.login_myqa .user_title {
+  border: none;
+}
+.login_myqa .qa_plus {
+  margin: 15px auto 0;
+}
+.login_myqa .qa_plus a {
+  padding: 4px 20px;
+}
+.logout_maqa {
+  display: none;
+  margin-top: 60px;
+}
+.logout_maqa .logout_notice {
+  margin: 10px;
+}
+.fix_qa {
+  display: none;
+}
+.fix_myqa {
+  display: none;
 }
 /* End fixed_button */
 

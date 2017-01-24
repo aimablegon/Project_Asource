@@ -184,3 +184,11 @@ $(function(){
         resizeBoxFn();
     })
 })
+
+/* courseView fixed_right_btn*/
+$(function(){
+    $('.left_btn button').click(function(){
+        $('.fix_list').toggle();
+        resizeBoxFn();
+    })
+})
