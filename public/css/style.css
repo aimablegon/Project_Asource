@@ -231,9 +231,6 @@ i {
 .wrap_lnb ul .icon_lnb {
   width: 20px;
 }
-.wrap_lnb .mypage_lnb {
-  display: none;
-}
 /* End header */
 /* ====== wrapper ============================================== */
 #wrapper {
@@ -374,6 +371,9 @@ i {
   vertical-align: top;
   padding: 4px;
 }
+.detail_btn a:hover {
+  color: #FFF;
+}
 .detail_text {
   margin: 10px 0 50px;
 }
@@ -428,6 +428,7 @@ i {
 }
 .fix_epil_qa {
   right: 0;
+  display: none;
 }
 .list_lnb {
   margin: 5px;
@@ -463,9 +464,6 @@ i {
 .fix_list_box .box_right_btn {
   margin-left: 15px;
   margin-right: 5px;
-}
-.fix_epil_qa {
-  display: none;
 }
 .btn_epil_qa {
   margin: 5px;
@@ -549,5 +547,49 @@ i {
   display: none;
 }
 /* End fixed_button */
+/*======== my Q&A ========================*/
+.myqa {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+.myqa_list {
+  border-right: 1px #a9a9a9 solid;
+}
+.list_title {
+  margin: 10px;
+}
+.list {
+  text-align: left;
+}
+.list .my_list {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px #a9a9a9 solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.list .my_list .user_title {
+  border: none;
+}
+.list .my_list textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.list .btn_right {
+  margin: 0;
+}
+.list .btn_right button {
+  margin: 10px 0;
+}
+/* End myQ&A*/
+/*======== my Buy ========================*/
+/* End my Buy*/
+/*======== my Bookmark ========================*/
+/* End my Bookmark*/
 
 /*# sourceMappingURL=style.css.map */
