@@ -321,16 +321,15 @@ i {
   *display: inline;
   *zoom: 1;
 }
-.course_btn div img {
-  width: 100%;
-}
 .line_top div {
   width: 40px;
   height: 30px;
 }
-.line_bottom div {
+.line_bottom img {
   width: 60px;
   height: 30px;
+  position: relative;
+  top: -56px;
 }
 .course_list {
   margin: 40px 0;
@@ -464,6 +463,9 @@ i {
 .fix_list_box .box_right_btn {
   margin-left: 15px;
   margin-right: 5px;
+}
+.fix_epil_qa {
+  display: none;
 }
 .btn_epil_qa {
   margin: 5px;

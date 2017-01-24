@@ -11,17 +11,17 @@ function resizeFn(){
         return -parseInt(courseBtn)/2 + 'px';
     },
   });
-  $('.line_bottom').css({
-    left : '50%',
-    marginLeft : function(){
-        var courseBtn = $(this).css('width');
-        return -parseInt(courseBtn)/2 + 'px';
-    },
-    top :  function(){
-        var courseBtn = $(this).prev('.course_list').css('height');
-        return parseInt(courseBtn) -15 + 'px';
-    }
-  });
+  // $('.line_bottom').css({
+  //   left : '50%',
+  //   marginLeft : function(){
+  //       var courseBtn = $(this).css('width');
+  //       return -parseInt(courseBtn)/2 + 'px';
+  //   },
+  //   top :  function(){
+  //       var courseBtn = $(this).prev('.course_list').css('height');
+  //       return parseInt(courseBtn) -15 + 'px';
+  //   }
+  // });
 
 
   $('.box_left').css({
@@ -57,7 +57,7 @@ function resizeBoxFn(){
         var courseBtn = $(this).css('width');
         return -parseInt(courseBtn)/2 + 'px';
     },
-    top :  '28px'
+    top :  '38px'
   });
   // $('.fix_line_bottom').css({
   //   left : '50%',
@@ -183,12 +183,48 @@ $(function(){
         $('.fix_list').toggle();
         resizeBoxFn();
     })
-})
+
 
 /* courseView fixed_right_btn*/
-$(function(){
-    $('.left_btn button').click(function(){
-        $('.fix_list').toggle();
-        resizeBoxFn();
+    $('.right_btn button').click(function(){
+        var state = $('.fix_epil_qa').css('display');
+        if(state == 'none'){
+            $('.fix_epil_qa').show()
+        }else{
+            $('.fix_epil_qa').hide()
+        }
+    })
+    $('.btn_epil').click(function(){
+        $('.fix_epil').css({
+            display:'block'
+        });
+        $('.fix_qa').css({
+            display:'none'
+        });
+        $('.fix_myqa').css({
+            display:'none'
+        })
+    })
+    $('.btn_qa').click(function(){
+        $('.fix_qa').css({
+            display:'block'
+        });
+        $('.fix_epil').css({
+            display:'none'
+        });
+        $('.fix_myqa').css({
+            display:'none'
+        })
+    })
+    $('.btn_myqa').click(function(){
+        $('.fix_myqa').css({
+            display:'block'
+        });
+        $('.fix_qa').css({
+            display:'none'
+        });
+        $('.fix_epil').css({
+            display:'none'
+        })
     })
 })
