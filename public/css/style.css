@@ -577,6 +577,7 @@ i {
 .list .my_list .user_title {
   border: none;
 }
+.list .my_list input,
 .list .my_list textarea {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
