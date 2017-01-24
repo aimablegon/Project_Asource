@@ -504,7 +504,7 @@ i {
 .user_info {
   padding: 0 5px 5px;
 }
-.user_info .info_date {
+.info_date {
   float: right;
 }
 .user_text {
@@ -514,6 +514,8 @@ i {
 .user_title {
   border-top: 1px #a9a9a9 solid;
   padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .user_reply {
   margin: 10px 5px 0 20px;
@@ -548,17 +550,19 @@ i {
 }
 /* End fixed_button */
 /*======== my Q&A ========================*/
-.myqa {
+.mypage {
+  border: 1px #a9a9a9 solid;
+  margin: 20px 20px 15px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  margin: 20px 0;
 }
-.myqa_list {
-  border-right: 1px #a9a9a9 solid;
+.basic_list {
+  overflow-y: auto;
+  height: 562px;
 }
-.list_title {
-  margin: 10px;
+.mypage_title {
+  margin: 20px 10px;
 }
 .list {
   text-align: left;
@@ -568,8 +572,7 @@ i {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px #a9a9a9 solid;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .list .my_list .user_title {
   border: none;
@@ -590,6 +593,10 @@ i {
 /*======== my Buy ========================*/
 /* End my Buy*/
 /*======== my Bookmark ========================*/
+.course_info {
+  padding: 5px 5px 10px;
+  border-top: 1px #a9a9a9 solid;
+}
 /* End my Bookmark*/
 
 /*# sourceMappingURL=style.css.map */
