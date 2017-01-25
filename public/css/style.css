@@ -402,7 +402,7 @@ i {
 .view_detail .view_icon a {
   vertical-align: middle;
 }
-.view_detail .view_icon .btn_buy {
+.btn_buy {
   margin-left: 10px;
   padding: 3px;
 }
@@ -591,13 +591,18 @@ i {
   margin: 10px 0;
 }
 /* End myQ&A*/
-/*======== my Buy ========================*/
-/* End my Buy*/
 /*======== my Bookmark ========================*/
 .course_info {
   padding: 5px 5px 10px;
   border-top: 1px #a9a9a9 solid;
 }
+.course_info a {
+  float: right;
+  margin-bottom: 5px;
+}
 /* End my Bookmark*/
+.buy_apply {
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
