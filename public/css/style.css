@@ -81,6 +81,13 @@ img {
   width: 100%;
   height: 100%;
 }
+legend {
+  text-indent: -99999px;
+  margin: 0;
+  border: none;
+  font-size: 0;
+  line-height: 0;
+}
 /* End reset */
 /* ====== Icon & Button ======================================== */
 .btn_a {
@@ -129,6 +136,9 @@ img {
 }
 .btn_right {
   text-align: right;
+}
+.btn_delete {
+  float: right;
 }
 .circle_a {
   width: 25px;
@@ -545,7 +555,7 @@ i {
 .logout_maqa .logout_notice {
   margin: 10px;
 }
-.fix_qa {
+.fix_epil {
   display: none;
 }
 .fix_myqa {
@@ -601,8 +611,67 @@ i {
   margin-bottom: 5px;
 }
 /* End my Bookmark*/
+/* ====== cart =========================*/
+.check_title h3 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 10px;
+}
+.check_title input {
+  vertical-align: text-top;
+}
+.check_part input {
+  vertical-align: baseline;
+}
+/* End cart*/
+/* ====== buy_info ======================*/
 .buy_apply {
   text-align: center;
+  margin-bottom: 15px;
 }
+#buy_info .buy_line {
+  border-bottom: 1px #000 solid;
+}
+#buy_info .buy_coupon select {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 13px;
+}
+#buy_info .buy_point .user_point {
+  margin: 5px 5px 0;
+}
+.buy_point {
+  border-top: 1px #a9a9a9 solid;
+}
+.buy_info_list {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+.buy_info_list .buy_course_title {
+  font-weight: 500;
+}
+.buy_price_total {
+  text-align: right;
+  margin: 10px 0;
+}
+.buy_price_total .price_total {
+  border-top: 1px #a9a9a9 solid;
+  font-size: 16px;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+#buy_info .payment {
+  margin: 5px 5px 10px 5px;
+}
+#buy_info .payment input {
+  vertical-align: bottom;
+  margin: 0 5px;
+}
+#buy_info .payment input:first-child {
+  margin-left: 0;
+}
+/* End buy_info*/
 
 /*# sourceMappingURL=style.css.map */

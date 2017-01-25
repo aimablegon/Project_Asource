@@ -1,3 +1,72 @@
+/* ====== cart =========================*/
+.check_title{
+    h3{
+        .inlineblock();
+        margin-right: 10px;
+    }
+    input{
+        vertical-align: text-top;
+    }
+}
+.check_part{
+    input{
+        vertical-align: baseline;
+    }
+}
+/* End cart*/
+
+/* ====== buy_info ======================*/
 .buy_apply{
     text-align: center;
+    margin-bottom: 15px;
 }
+#buy_info .buy_line{
+    border-bottom: @btn-out;
+}
+#buy_info {
+    .buy_coupon{
+        select{
+          .radius();
+          margin-top: 13px;
+        }
+    }
+    .buy_point{
+        .user_point{
+          margin: 5px 5px 0;
+        }
+        input{
+
+        }
+    }
+}
+.buy_point{
+    border-top: @area-line;
+}
+.buy_info_list{
+    margin: 10px 0;
+    padding: 0 5px;
+        .buy_course_title{
+            font-weight: 500;
+        }
+}
+.buy_price_total{
+    text-align: right;
+    margin: 10px 0;
+        .price_total{
+            border-top:@area-line;
+            font-size: 16px;
+            margin-top: 10px;
+            padding-top: 5px;
+        }
+}
+#buy_info .payment{
+    margin:5px 5px 10px 5px;
+      input{
+          vertical-align: bottom;
+          margin:0 5px;
+            &:first-child{
+                margin-left: 0
+            }
+      }
+}
+/* End buy_info*/

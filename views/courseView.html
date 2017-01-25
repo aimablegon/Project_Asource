@@ -78,8 +78,8 @@
                   <div class="view_detail col-md-offset-1 col-md-10">
                       <h2>웹표준이란?</h2>
                       <div class="detail_icon view_icon">
-                          <a href="//github.com"><i class="glyphicon glyphicon-ok"></i></a>
-                          <a href="//jsfiddle.net"><i class="glyphicon glyphicon-ok"></i></a>
+                          <a href="//github.com" title="github"><i class="glyphicon glyphicon-ok"></i></a>
+                          <a href="//jsfiddle.net" title="jsfiddle"><i class="glyphicon glyphicon-ok"></i></a>
                           <a class="btn_c btn_full btn_buy" href="buy.html">구매하기</a>
                       </div>
                   </div>
@@ -91,7 +91,7 @@
               </div>
               <div class="fix_left">
                   <div class="left_btn">
-                      <button type="button"><i class="glyphicon glyphicon-info-sign btn_fix"></i></button>
+                      <button type="button" title="커리큘럼"><i class="glyphicon glyphicon-info-sign btn_fix"></i></button>
                   </div>
                   <div class="fix fix_list course_list">
                       <ul class="list_lnb">
@@ -246,14 +246,108 @@
               </div>
               <div class="fix_right">
                   <div class="right_btn">
-                      <button type="button"><i class="glyphicon glyphicon-question-sign btn_fix"></i></button>
+                      <button type="button" title="후기&amp;질문"><i class="glyphicon glyphicon-question-sign btn_fix"></i></button>
                   </div>
                   <div class="fix fix_epil_qa">
+                      <div class="fix_qa">
+                          <div class="btn_epil_qa">
+                              <button class="btn_c btn_full btn_qa" type="button">질문</button>
+                              <button class="btn_c btn_vide btn_myqa" type="button">내 질문</button>
+                              <button class="btn_c btn_vide btn_epil" type="button">후기</button>
+                          </div>
+                          <div class="new_epil_qa fix_common">
+                              <input class="col-md-12 col-sm-12 col-xs-12" type="text" placeholder="질문의 제목"/>
+                              <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="8" placeholder="이 강의에 대한 질문을 작성해주세요"></textarea>
+                              <div class="btn_right">
+                                  <button class="btn_d btn_full" type="button">질문등록</button>
+                              </div>
+                          </div>
+                          <div class="old_epil_qa">
+                              <div class="course_qa fix_common">
+                                  <div class="user_info">
+                                      <span>이름1</span>
+                                      <span class="info_date">2017.01.24</span>
+                                  </div>
+                                  <div class="user_title">
+                                      이름1님의 질문 제목입니다.
+                                  </div>
+                                  <div class="user_text">
+                                      이름1님이 2017년 1월 24일에 남긴 웹표준이란? 이란 강의의 질문 입니다.
+                                  </div>
+                                  <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="2" placeholder="댓글을 남겨주세요"></textarea>
+                                  <div class="btn_right">
+                                      <button class="btn_d btn_full" type="button">댓글등록</button>
+                                  </div>
+                              </div>
+                              <div class="course_qa fix_common">
+                                  <div class="user_info">
+                                      <span>이름1</span>
+                                      <span class="info_date">2017.01.24</span>
+                                  </div>
+                                  <div class="user_title">
+                                      이름1님의 질문 제목입니다.
+                                  </div>
+                                  <div class="user_text">
+                                      이름1님이 2017년 1월 4일에 남긴 웹표준이란? 이란 강의의 질문 입니다.
+                                  </div>
+                                  <div class="user_reply">
+                                    ↘ &nbsp;&nbsp;2017년 1월4일에 이름1님이 남긴 질문에 대한 댓글입니다.(아이디)
+                                  </div>
+                                  <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="2"placeholder="댓글을 남겨주세요"></textarea>
+                                  <div class="btn_right">
+                                      <button class="btn_d btn_full" type="button">댓글등록</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fix_myqa">
+                          <div class="btn_epil_qa">
+                              <button class="btn_c btn_vide btn_qa" type="button">질문</button>
+                              <button class="btn_c btn_full btn_myqa" type="button">내 질문</button>
+                              <button class="btn_c btn_vide btn_epil" type="button">후기</button>
+                          </div>
+                          <div class="old_epil_qa login_myqa">
+                              <div class="course_qa fix_common">
+                                  <div class="user_title">
+                                      내 질문 제목1입니다.
+                                  </div>
+                                  <div class="user_text">
+                                    내가 2017년 1월 24일에 남긴 웹표준이란? 이란 강의의 질문 입니다.
+                                  </div>
+                                  <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="2" placeholder="댓글을 남겨주세요"></textarea>
+                                  <div class="btn_right">
+                                      <button class="btn_d btn_full" type="button">댓글등록</button>
+                                  </div>
+                              </div>
+                              <div class="course_qa fix_common">
+                                  <div class="user_title">
+                                    내 질문 제목2입니다.
+                                  </div>
+                                  <div class="user_text">
+                                      내가 2017년 1월 4일에 남긴 웹표준이란? 이란 강의의 질문 입니다.
+                                  </div>
+                                  <div class="user_reply">
+                                    ↘ &nbsp;&nbsp;2017년 1월4일에 내가 남긴 질문에 대한 댓글입니다.(아이디)
+                                  </div>
+                                  <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="2" placeholder="댓글을 남겨주세요"></textarea>
+                                  <div class="btn_right">
+                                      <button class="btn_d btn_full" type="button">댓글등록</button>
+                                  </div>
+                              </div>
+                              <div class="qa_plus btn_vide btn_c">
+                                  <a href="myQa.html">+ 더보기</a>
+                              </div>
+                          </div>
+                          <div class="logout_maqa">
+                              <div class="logout_notice">로그인 후 이용 가능합니다.</div>
+                              <button class="btn_b btn_vide"type="button">로그인</button>
+                          </div>
+                      </div>
                       <div class="fix_epil">
                           <div class="btn_epil_qa">
-                              <button class="btn_c btn_full btn_epil" type="button">후기</button>
                               <button class="btn_c btn_vide btn_qa" type="button">질문</button>
                               <button class="btn_c btn_vide btn_myqa" type="button">내 질문</button>
+                              <button class="btn_c btn_full btn_epil" type="button">후기</button>
                           </div>
                           <div class="new_epil_qa fix_common">
                               <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="8" placeholder="이 강의에 후기를 써주세요."></textarea>
@@ -307,100 +401,6 @@
                                       이름5님이 2016년 12월 28일에 남긴 웹표준이란? 이란 강의 의 후기 입니다.
                                   </div>
                               </div>
-                          </div>
-                      </div>
-                      <div class="fix_qa">
-                          <div class="btn_epil_qa">
-                              <button class="btn_c btn_vide btn_epil" type="button">후기</button>
-                              <button class="btn_c btn_full btn_qa" type="button">질문</button>
-                              <button class="btn_c btn_vide btn_myqa" type="button">내 질문</button>
-                          </div>
-                          <div class="new_epil_qa fix_common">
-                              <input class="col-md-12 col-sm-12 col-xs-12" type="text" placeholder="질문의 제목"/>
-                              <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="8" placeholder="이 강의에 대한 질문을 작성해주세요"></textarea>
-                              <div class="btn_right">
-                                  <button class="btn_d btn_full" type="button">질문등록</button>
-                              </div>
-                          </div>
-                          <div class="old_epil_qa">
-                              <div class="course_qa fix_common">
-                                  <div class="user_info">
-                                      <span>이름1</span>
-                                      <span class="info_date">2017.01.24</span>
-                                  </div>
-                                  <div class="user_title">
-                                      이름1님의 질문 제목입니다.
-                                  </div>
-                                  <div class="user_text">
-                                      이름1님이 2017년 1월 24일에 남긴 웹표준이란? 이란 강의의 질문 입니다.
-                                  </div>
-                                  <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="2" placeholder="댓글을 남겨주세요"></textarea>
-                                  <div class="btn_right">
-                                      <button class="btn_d btn_full" type="button">댓글등록</button>
-                                  </div>
-                              </div>
-                              <div class="course_qa fix_common">
-                                  <div class="user_info">
-                                      <span>이름1</span>
-                                      <span class="info_date">2017.01.24</span>
-                                  </div>
-                                  <div class="user_title">
-                                      이름1님의 질문 제목입니다.
-                                  </div>
-                                  <div class="user_text">
-                                      이름1님이 2017년 1월 4일에 남긴 웹표준이란? 이란 강의의 질문 입니다.
-                                  </div>
-                                  <div class="user_reply">
-                                    ↘ &nbsp;&nbsp;2017년 1월4일에 이름1님이 남긴 질문에 대한 댓글입니다.(아이디)
-                                  </div>
-                                  <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="2"placeholder="댓글을 남겨주세요"></textarea>
-                                  <div class="btn_right">
-                                      <button class="btn_d btn_full" type="button">댓글등록</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="fix_myqa">
-                          <div class="btn_epil_qa">
-                              <button class="btn_c btn_vide btn_epil" type="button">후기</button>
-                              <button class="btn_c btn_vide btn_qa" type="button">질문</button>
-                              <button class="btn_c btn_full btn_myqa" type="button">내 질문</button>
-                          </div>
-                          <div class="old_epil_qa login_myqa">
-                              <div class="course_qa fix_common">
-                                  <div class="user_title">
-                                      내 질문 제목1입니다.
-                                  </div>
-                                  <div class="user_text">
-                                    내가 2017년 1월 24일에 남긴 웹표준이란? 이란 강의의 질문 입니다.
-                                  </div>
-                                  <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="2" placeholder="댓글을 남겨주세요"></textarea>
-                                  <div class="btn_right">
-                                      <button class="btn_d btn_full" type="button">댓글등록</button>
-                                  </div>
-                              </div>
-                              <div class="course_qa fix_common">
-                                  <div class="user_title">
-                                    내 질문 제목2입니다.
-                                  </div>
-                                  <div class="user_text">
-                                      내가 2017년 1월 4일에 남긴 웹표준이란? 이란 강의의 질문 입니다.
-                                  </div>
-                                  <div class="user_reply">
-                                    ↘ &nbsp;&nbsp;2017년 1월4일에 내가 남긴 질문에 대한 댓글입니다.(아이디)
-                                  </div>
-                                  <textarea class="col-md-12 col-sm-12 col-xs-12" name="name" rows="2" placeholder="댓글을 남겨주세요"></textarea>
-                                  <div class="btn_right">
-                                      <button class="btn_d btn_full" type="button">댓글등록</button>
-                                  </div>
-                              </div>
-                              <div class="qa_plus btn_vide btn_c">
-                                  <a href="myQa.html">+ 더보기</a>
-                              </div>
-                          </div>
-                          <div class="logout_maqa">
-                              <div class="logout_notice">로그인 후 이용 가능합니다.</div>
-                              <button class="btn_b btn_vide"type="button">로그인</button>
                           </div>
                       </div>
                   </div>
