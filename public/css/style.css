@@ -572,7 +572,7 @@ i {
 }
 .basic_list {
   overflow-y: auto;
-  height: 562px;
+  height: 560px;
 }
 .mypage_title {
   margin: 20px 10px;
@@ -601,6 +601,25 @@ i {
   margin: 10px 0;
 }
 /* End myQ&A*/
+/*======== my buy ========================*/
+.apply_coupon_point {
+  margin: 20px 20px 15px;
+}
+.apply_coupon_point .mypage {
+  margin: 0;
+}
+.apply_coupon_point .apply_point {
+  margin-bottom: 35px;
+}
+.mycoupon {
+  height: 397px;
+  overflow-y: auto;
+}
+.mypoint {
+  height: 60px;
+  overflow-y: auto;
+}
+/* End my buy*/
 /*======== my Bookmark ========================*/
 .course_info {
   padding: 5px 5px 10px;
@@ -641,6 +660,9 @@ i {
 }
 #buy_info .buy_point .user_point {
   margin: 5px 5px 0;
+}
+#buy_info .buy_point .user_point span {
+  margin-left: 30px;
 }
 .buy_point {
   border-top: 1px #a9a9a9 solid;
@@ -684,7 +706,7 @@ i {
   text-align: center;
 }
 .confirm_text {
-  margin: 100px 0;
+  margin: 100px 0 50px;
   text-align: center;
 }
 .confirm_text_detail h4 {
@@ -695,6 +717,10 @@ i {
 }
 .confirm_text_detail p {
   margin-top: 35px;
+}
+.btn_confirm {
+  text-align: center;
+  margin-top: 25px;
 }
 /* End buy_confirm*/
 
