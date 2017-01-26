@@ -673,5 +673,29 @@ i {
   margin-left: 0;
 }
 /* End buy_info*/
+/* ======= buy_confirm ====================*/
+.my_buy {
+  border: 1px #a9a9a9 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.confirm_tilte {
+  text-align: center;
+}
+.confirm_text {
+  margin: 100px 0;
+  text-align: center;
+}
+.confirm_text_detail h4 {
+  font-weight: 300;
+}
+.confirm_text_detail h3 {
+  margin: 10px 0;
+}
+.confirm_text_detail p {
+  margin-top: 35px;
+}
+/* End buy_confirm*/
 
 /*# sourceMappingURL=style.css.map */
