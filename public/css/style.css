@@ -158,18 +158,6 @@ i {
   font-size: 20px;
 }
 /* End Icon & Button */
-.container {
-  outline: 1px #000 solid;
-}
-.container-fluid {
-  outline: 1px #000 solid;
-}
-.contents {
-  outline: 1px #F00 solid;
-}
-.view_video {
-  outline: 1px #F00 solid;
-}
 /* ====== header ============================================== */
 #header {
   width: 100%;
@@ -245,6 +233,75 @@ i {
 }
 .wrap_lnb ul .icon_lnb {
   width: 20px;
+}
+#top {
+  height: auto;
+  position: relative;
+}
+.top {
+  padding: 10px 20px;
+  background: #CCC;
+  margin-bottom: 10px;
+}
+.logout {
+  outline-color: #000;
+  position: relative;
+  top: 0;
+}
+.gnb_top {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+}
+.gnb_menu {
+  outline: #000;
+  width: 150px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+.gnb_menu .menu_1 {
+  height: 54px;
+  padding: 13px 0;
+  font-size: 18px;
+  background: #828282;
+  color: #FFF;
+}
+.gnb_menu button {
+  width: 150px;
+  height: 40px;
+  border-bottom: 1px #FFF solid;
+  padding: 8px 0;
+  background: #CCC;
+  color: #828282;
+}
+.gnb_menu button:hover {
+  background: #828282;
+  color: #FFF;
+}
+.gnb_menu a {
+  width: 150px;
+  height: 40px;
+  border-bottom: 1px #FFF solid;
+  padding: 8px 0;
+  background: #333333;
+  color: #FFF;
+}
+.gnb_menu a:hover {
+  background: #828282;
+  color: #FFF;
+}
+.menu_close {
+  display: none;
+}
+.menu_list_2 {
+  position: absolute;
+  top: 54px;
+  right: 150px;
+  display: none;
+  z-index: 15;
 }
 /* End header */
 /* ====== wrapper ============================================== */

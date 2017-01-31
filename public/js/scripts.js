@@ -105,6 +105,8 @@ function detailBox(){
   })
 }
 
+
+
 //Gnb
 $(function(){
     $('.gnb').click(function(){
@@ -118,6 +120,20 @@ $(function(){
       })
     })
 
+    //gnb_menu
+    $('.menu_open').click(function(){
+        $(this).css('display','none');
+        $('.menu_close').css('display','block')
+    })
+    $('.menu_close').click(function(){
+        $(this).css('display','none');
+        $('.menu_open').css('display','block')
+    })
+    $('.menu_list_1 .menu_2').mouseenter(function(){
+        $('.menu_list_2').css('display','block')
+    }).mouseleave(function(){
+        $('.menu_list_2').css('display','none')
+    })
 })
 // course_list
 /*resize*/

@@ -104,20 +104,20 @@ i{
 }
 
 /* End Icon & Button */
-
-.container{
-    outline: @btn-out;
-}
-.container-fluid{
-    outline: @btn-out;
-}
-.contents{
-    outline: @out;
-}
-.view_video{
-  outline: @out;
-
-}
+ //outline잡아둔거
+// .container{
+//     outline: @btn-out;
+// }
+// .container-fluid{
+//     outline: @btn-out;
+// }
+// .contents{
+//     outline: @out;
+// }
+// .view_video{
+//   outline: @out;
+//
+// }
 /* ====== header ============================================== */
 #header{
     width: 100%;
@@ -193,6 +193,78 @@ i{
 
       }
 }
+
+//top
+#top{
+    height: auto;
+    position: relative;
+}
+.top{
+    padding: 10px 20px;
+    background: @sub2-color;
+    margin-bottom: 10px;
+}
+.logout{outline-color: @main-color;
+    position: relative;
+    top:0;
+
+}
+.gnb_top{
+    position: absolute;
+    top:16px;
+    right:30px;
+}
+.gnb_menu{outline: @main-color;
+    width: 150px;
+    position:absolute;
+    z-index: 10;
+    top:0;
+    right:0;
+    text-align: center;
+      .menu_1{
+          height:54px;
+          padding:13px 0;
+          font-size: 18px;
+          background:  @sub1-color;
+          color:@sub3-color;
+      }
+      button{
+        width: 150px;
+        height:40px;
+        border-bottom:@menu-line;
+        padding:8px 0;
+        background: @sub2-color;
+        color:@sub1-color;
+        &:hover{
+          background:  @sub1-color;
+          color:@sub3-color;
+        }
+      }
+      a{
+        width: 150px;
+        height:40px;
+        border-bottom:@menu-line;
+        padding:8px 0;
+        background: @sub4-color;
+        color:@sub3-color;
+        &:hover{
+          background:  @sub1-color;
+          color:@sub3-color;
+        }
+      }
+
+}
+.menu_close{
+    display: none;
+}
+.menu_list_2{
+    position: absolute;
+    top: 54px;
+    right: 150px;
+    display: none;
+    z-index: 15;
+
+}
 /* End header */
 /* ====== wrapper ============================================== */
 #wrapper{
@@ -204,7 +276,7 @@ i{
 /* ====== Footer ============================================== */
 
 #footer{
-    background-color:#333333;
+    background-color:@sub4-color;
     color:#FFF;
     width:100%;
     font-size: @footer-size;
