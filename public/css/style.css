@@ -305,14 +305,11 @@ i {
   z-index: 15;
 }
 .menu_list_3 {
-  width: 150px;
   position: absolute;
-  top: 54px;
+  top: 94px;
   right: 150px;
   display: none;
   z-index: 15;
-  height: 123px;
-  background: #FFF;
 }
 /* End header */
 /* ====== wrapper ============================================== */
@@ -359,11 +356,14 @@ i {
 /* End footer */
 /*Contants*/
 /* ======== Content_top ============================ */
-.contents {
-  padding: 35px 0;
+.contents_course {
+  padding: 50px 0 100px;
 }
 .content_top {
   text-align: center;
+}
+.content_top .course_title {
+  margin-bottom: 30px;
 }
 .content_top .content_title {
   margin: 20px 0 15px;
@@ -388,7 +388,6 @@ i {
   font-size: 20px;
 }
 .course {
-  outline: 1px #F00 solid;
   width: 100%;
   position: relative;
 }
@@ -458,6 +457,9 @@ i {
   margin: 10px 0 50px;
 }
 /* End content_bottom*/
+.contents_view {
+  padding: 35px 0;
+}
 /* ====== video ============================================== */
 .view_detail {
   text-align: left;
