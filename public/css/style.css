@@ -269,7 +269,8 @@ i {
   background: #828282;
   color: #FFF;
 }
-.gnb_menu button {
+.gnb_menu button,
+.gnb_menu a {
   width: 150px;
   height: 40px;
   border-bottom: 1px #FFF solid;
@@ -277,11 +278,12 @@ i {
   background: #CCC;
   color: #828282;
 }
-.gnb_menu button:hover {
+.gnb_menu button:hover,
+.gnb_menu a:hover {
   background: #828282;
   color: #FFF;
 }
-.gnb_menu a {
+.gnb_menu .top_menu {
   width: 150px;
   height: 40px;
   border: 1px #FFF solid;
@@ -290,7 +292,7 @@ i {
   background: #333333;
   color: #FFF;
 }
-.gnb_menu a:hover {
+.gnb_menu .top_menu:hover {
   background: #828282;
   color: #FFF;
 }
@@ -314,8 +316,10 @@ i {
 /* End header */
 /* ====== wrapper ============================================== */
 #wrapper {
-  text-align: center;
   position: relative;
+}
+.center {
+  text-align: center;
 }
 /* End wrapper */
 /* ====== Footer ============================================== */
@@ -457,8 +461,8 @@ i {
   margin: 10px 0 50px;
 }
 /* End content_bottom*/
-.contents_view {
-  padding: 35px 0;
+.contents {
+  padding: 50px 0;
 }
 /* ====== video ============================================== */
 .view_detail {
@@ -793,5 +797,13 @@ i {
   margin-top: 25px;
 }
 /* End buy_confirm*/
+/* ======= notice ===========================*/
+.notice {
+  border: 1px #a9a9a9 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* End notice*/
 
 /*# sourceMappingURL=style.css.map */
