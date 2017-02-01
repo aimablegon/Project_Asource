@@ -129,10 +129,44 @@ $(function(){
         $(this).css('display','none');
         $('.menu_open').css('display','block')
     })
+
+
     $('.menu_list_1 .menu_2').mouseenter(function(){
-        $('.menu_list_2').css('display','block')
+        $(this).css({
+            'background':'rgb(130,130,130)',
+            'color':'#FFF'
+        });
+        $('.menu_list_2').css('display','block');
     }).mouseleave(function(){
-        $('.menu_list_2').css('display','none')
+        $(this).css({
+          'background':'#CCC',
+          'color':'rgb(130,130,130)'
+        });
+    })
+    $('.menu_list_1 .menu_3').mouseenter(function(){
+        $(this).css({
+            'background':'rgb(130,130,130)',
+            'color':'#FFF'
+        });
+        $('.menu_list_2').css('display','none');
+    }).mouseleave(function(){
+        $(this).css({
+          'background':'#CCC',
+          'color':'rgb(130,130,130)'
+        });
+        $('.menu_list_2').css('display','none');
+    })
+    $('.menu_list_2').mouseenter(function(){
+        $('.menu_list_1 .menu_2').css({
+            'background':'rgb(130,130,130)',
+            'color':'#FFF'
+        });
+    }).mouseleave(function(){
+        $('.menu_list_1 .menu_2').css({
+          'background':'#CCC',
+          'color':'rgb(130,130,130)'
+        });
+        $('.menu_list_2').css('display','none');
     })
 })
 // course_list

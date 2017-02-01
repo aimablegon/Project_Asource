@@ -284,7 +284,8 @@ i {
 .gnb_menu a {
   width: 150px;
   height: 40px;
-  border-bottom: 1px #FFF solid;
+  border: 1px #FFF solid;
+  border-top: none;
   padding: 8px 0;
   background: #333333;
   color: #FFF;
@@ -302,6 +303,16 @@ i {
   right: 150px;
   display: none;
   z-index: 15;
+}
+.menu_list_3 {
+  width: 150px;
+  position: absolute;
+  top: 54px;
+  right: 150px;
+  display: none;
+  z-index: 15;
+  height: 123px;
+  background: #FFF;
 }
 /* End header */
 /* ====== wrapper ============================================== */
