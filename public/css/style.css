@@ -269,6 +269,18 @@ i {
   background: #828282;
   color: #FFF;
 }
+.gnb_menu .menu_list_1 div {
+  width: 150px;
+  height: 40px;
+  border-bottom: 1px #FFF solid;
+  padding: 8px 0;
+  background: #CCC;
+  color: #828282;
+}
+.gnb_menu .menu_list_1 div:hover {
+  background: #828282;
+  color: #FFF;
+}
 .gnb_menu button,
 .gnb_menu a {
   width: 150px;

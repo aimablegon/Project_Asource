@@ -1,3 +1,4 @@
+/* resize-function*/
 function resizeFn(){
 
   $('.line_top').css({
@@ -11,19 +12,6 @@ function resizeFn(){
         return -parseInt(courseBtn)/2 + 'px';
     },
   });
-  // $('.line_bottom').css({
-  //   left : '50%',
-  //   marginLeft : function(){
-  //       var courseBtn = $(this).css('width');
-  //       return -parseInt(courseBtn)/2 + 'px';
-  //   },
-  //   top :  function(){
-  //       var courseBtn = $(this).prev('.course_list').css('height');
-  //       return parseInt(courseBtn) -15 + 'px';
-  //   }
-  // });
-
-
   $('.box_left').css({
       width : function(){
           var lineWidth = $('#standardWidth').css('width');
@@ -59,17 +47,6 @@ function resizeBoxFn(){
     },
     top :  '38px'
   });
-  // $('.fix_line_bottom').css({
-  //   left : '50%',
-  //   marginLeft : function(){
-  //       var courseBtn = $(this).css('width');
-  //       return -parseInt(courseBtn)/2 + 'px';
-  //   },
-  //   top :  function(){
-  //       var courseBtn = $('#fixed_box').css('height');
-  //       return parseInt(courseBtn) + 'px';
-  //   }
-  // });
   $('.fix_list_box .box_left').css({
       width : function(){
           var lineWidth = $('.fix_list_box').css('width');
@@ -95,6 +72,7 @@ function resizeBoxFn(){
   })
 }
 resizeBoxFn()
+/* End resize-function*/
 
 /*detail_box 기본*/
 function detailBox(){
@@ -104,10 +82,18 @@ function detailBox(){
       display:'block'
   })
 }
+/* End detail_box 기본*/
 
 
+/*resize*/
 
-//Gnb
+$(window).resize(function(){
+  resizeFn();
+  resizeBoxFn();
+});
+/* End resize*/
+
+/*Gnb*/
 $(function(){
     $('.gnb').click(function(){
         $('.gnb_list').css(
@@ -199,14 +185,9 @@ $(function(){
         $('.menu_list_3').css('display','none');
     })
 })
-// course_list
-/*resize*/
-
-$(window).resize(function(){
-  resizeFn();
-  resizeBoxFn();
-});
+/* End Gnb*/
 /*click*/
+    //index_new,old button
 $(function(){
     $('.btn_view').click(function(){
         $('.container_bottom').css({
@@ -237,7 +218,7 @@ $(function(){
 })
 
 
-/*Main button click*/
+    //Main button click
 $(function(){
 
     $('.course_list .list_title').click(function(){
@@ -257,7 +238,7 @@ $(function(){
 })
 
 
-/* courseView fixed_left_btn*/
+    // courseView.html fixed_left_btn
 $(function(){
     $('.left_btn button').click(function(){
         $('.fix_list').toggle();
@@ -265,7 +246,7 @@ $(function(){
     })
 
 
-/* courseView fixed_right_btn*/
+    // courseView.html fixed_right_btn
     $('.right_btn button').click(function(){
         var state = $('.fix_epil_qa').css('display');
         if(state == 'none'){
@@ -308,3 +289,10 @@ $(function(){
         })
     })
 })
+
+
+/* End Click*/
+
+/* Popup */
+
+/* End popup*/
