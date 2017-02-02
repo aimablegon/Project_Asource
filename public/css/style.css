@@ -321,6 +321,12 @@ i {
 .center {
   text-align: center;
 }
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
 /* End wrapper */
 /* ====== Footer ============================================== */
 #footer {
@@ -803,6 +809,31 @@ i {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+}
+.notice thead tr th {
+  font-size: 16px;
+  line-height: 30px;
+}
+.notice a {
+  vertical-align: middle;
+}
+.notice .notice_sub {
+  font-size: 14px;
+  font-weight: normal;
+}
+.notice .notice_writer {
+  padding: 5px 15px 0 0;
+}
+.notice .notice_text {
+  padding: 30px 40px;
+}
+.prev_list {
+  margin: 20px 0;
+}
+.prev_list a {
+  padding: 8px;
 }
 /* End notice*/
 
