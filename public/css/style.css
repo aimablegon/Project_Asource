@@ -848,5 +848,30 @@ i {
   padding: 8px;
 }
 /* End notice*/
+/* Modal*/
+dt,
+dd {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+dt {
+  margin-right: 5px;
+  font-weight: 400;
+}
+.teacher_info {
+  height: 400px;
+  overflow-y: auto;
+}
+.teacher_info .teacher_line {
+  padding-bottom: 10px;
+  border-bottom: 2px #a9a9a9 solid;
+}
+.teacher_info h4 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px #a9a9a9 solid;
+}
+/* End Modal*/
 
 /*# sourceMappingURL=style.css.map */

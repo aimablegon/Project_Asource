@@ -82,7 +82,7 @@
                         <div class="menu_2">카테고리</div>
                         <div class="menu_3">My page</div>
                         <a class="menu_4 menu_noti" href="notice.html">공지사항</a>
-                        <button class="menu_4" type="button">로그인</button>
+                        <button class="menu_4" type="button" data-toggle="modal" data-target="#modal_login">로그인</button>
                         <button class="menu_4" type="button">로그아웃</button>
                       </div>
                       <div class="menu_list_2 menu_list">
@@ -123,7 +123,7 @@
                         <img src="/images/html_logo.jpg" alt="html로고" />
                     </div>
                     <div class="content_btn">
-                        <button class="btn_b btn_vide" type="button">쿠폰등록</button>
+                        <button class="btn_b btn_vide btn_click" type="button" data-toggle="modal" data-target="#modal_coupon">쿠폰등록</button>
                         <button class="btn_b btn_full btn_view" type="button">강의보기</button>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                   <div class="content_bottom">
                       <div class="teacher">
                           <span>둔기</span>
-                          <i class="glyphicon glyphicon-user"></i>
+                          <button type="button" data-toggle="modal" data-target="#modal_teacher"> <i class="glyphicon glyphicon-user"></i></button>
                       </div>
 
                       <div class="course old">
@@ -499,6 +499,145 @@
                   </div>
               </div>
           </div>
+
+      <!-- Modal -->
+          <!-- login -->
+          <div class="modal fade" id="modal_login" tabindex="-1" role="dialog" aria-labelledby="modalLabel_login" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="modalLabel_login">로그인</h4>
+                      </div>
+                      <div class="modal-body">
+                          ...
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- End login -->
+          <!-- coupon -->
+          <div class="modal fade" id="modal_coupon" tabindex="-1" role="dialog" aria-labelledby="modalLable_coupon" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="modalLable_coupon">쿠폰등록</h4>
+                      </div>
+                      <div class="modal-body">
+                          ...
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- End coupon -->
+          <!-- teacher -->
+          <div class="modal fade" id="modal_teacher" tabindex="-1" role="dialog" aria-labelledby="modalLabel_teacher" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h3 class="modal-title" id="modalLabel_teacher">둔기쌤을 소개합니다.</h3>
+                      </div>
+                      <div class="modal-body">
+                          <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <img src="/images/html_logo.jpg" alt="강사사진" />
+                                  </div>
+                                  <div class="col-md-6 teacher_info">
+                                      <div class="left teacher_line">
+                                          <h4>경력</h4>
+                                          <dl>
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                              <br />
+                                              <dt>2016.01-2017.01</dt>
+                                              <dd>하이미디어 컴퓨터학원 강사</dd>
+                                          </dl>
+                                      </div>
+                                      <div class="left">
+                                          <h4>저서</h4>
+                                          <dl>
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                              <br />
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                              <br />
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                              <br />
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                              <br />
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                              <br />
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                              <br />
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                              <br />
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                              <br />
+                                              <dt>2016.01</dt>
+                                              <dd>퍼블리셔가 되어보자</dd>
+                                          </dl>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- End teacher -->
+        <!-- End Modal -->
       </div>
       <!-- End Wrapper -->
 

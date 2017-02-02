@@ -294,5 +294,10 @@ $(function(){
 /* End Click*/
 
 /* Popup */
+$(function(){
 
+    $('.btn_click').click(function(){
+
+    })
+})
 /* End popup*/
