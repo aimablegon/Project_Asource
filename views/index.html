@@ -503,17 +503,17 @@
       <!-- Modal -->
           <!-- login -->
           <div class="modal fade" id="modal_login" tabindex="-1" role="dialog" aria-labelledby="modalLabel_login" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-sm">
                   <div class="modal-content">
                       <div class="modal-header">
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                           <h4 class="modal-title" id="modalLabel_login">로그인</h4>
                       </div>
                       <div class="modal-body">
-                          ...
+                          <button type="button" class="btn btn_vide">Google로 계속하기 </button>
                       </div>
                       <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <!-- <button type="button" class="btn btn_vide" data-dismiss="modal">Close</button> -->
                       </div>
                   </div>
               </div>
@@ -528,10 +528,19 @@
                           <h4 class="modal-title" id="modalLable_coupon">쿠폰등록</h4>
                       </div>
                       <div class="modal-body">
-                          ...
+                        <form>
+                          <div class="container-fluid">
+                              <div class="row">
+                                <div class="form-group left col-md-offset-1 col-md-10">
+                                    <label for="coupon_number" class="control-label">쿠폰번호를 입력해 주세요.</label>
+                                    <input type="text" class="form-control" id="coupon_number">
+                                </div>
+                              </div>
+                            </div>
+                        </form>
                       </div>
                       <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn_vide">등록하기</button>
                       </div>
                   </div>
               </div>
@@ -631,7 +640,7 @@
                           </div>
                       </div>
                       <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn_vide" data-dismiss="modal">Close</button>
                       </div>
                   </div>
               </div>

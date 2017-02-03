@@ -106,15 +106,15 @@ legend {
   height: 30px;
 }
 .btn_vide {
-  border: 1px #000 solid;
+  border: 1px #828282 solid;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #FFF;
-  color: #000;
+  color: #828282;
 }
 .btn_vide:hover {
-  color: #000;
+  color: #828282;
 }
 .btn_full {
   border: 1px #000 solid;
